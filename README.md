@@ -19,4 +19,4 @@ The script has been updated to **use HuggingFace's ESMFold** instead of the orig
 - This eliminates the need to install and configure OpenFold separately.
 
 📥 **Download the updated script:**  
-[`structure_from_esm_v1.py`](./src/protein_structure/structure_from_esm_v1.py)
+[`structure_from_esm_v1.py`](https://github.com/DivyanshDiplo/LucaProt-Model-Updated/blob/main/structure_from_esm_v1.py)
