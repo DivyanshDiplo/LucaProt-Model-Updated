@@ -10,15 +10,14 @@ This repository contains updates and improvements on top of the original [LucaPr
 ## 1) 🔍 Prediction from Protein 3D Structure
 
 While running `structure_from_esm_v1.py`, the following error was encountered:
-"ModuleNotFoundError: No module named 'openfold'"
+
+ModuleNotFoundError: No module named 'openfold'
+
 
 ### ✅ Fix:
-The script has been updated to **use HuggingFace's ESMFold** instead of the original **ESM + OpenFold** approach.
+Install all OpenFold dependencies (reference: [ESM README](https://github.com/facebookresearch/esm/blob/main/README.md)):
 
-- Performance remains similar.
-- This eliminates the need to install and configure OpenFold separately.
-
-📥 **Download the updated script:**  
-[`structure_from_esm_v1.py`](https://github.com/DivyanshDiplo/LucaProt-Model-Updated/blob/main/structure_from_esm_v1.py)
-
-Replace this with already existing `structure_from_esm_v1.py` in Lucaprot/src/protein_structure
+<pre>
+pip install fair-esm  # latest release, OR:
+pip install git+https://github.com/facebookresearch/esm.git  # bleeding edge, current repo main branch
+</pre>
