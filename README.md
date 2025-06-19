@@ -20,3 +20,5 @@ The script has been updated to **use HuggingFace's ESMFold** instead of the orig
 
 📥 **Download the updated script:**  
 [`structure_from_esm_v1.py`](https://github.com/DivyanshDiplo/LucaProt-Model-Updated/blob/main/structure_from_esm_v1.py)
+
+Replace this with already existing `structure_from_esm_v1.py` in Lucaprot/src/protein_structure
