@@ -50,9 +50,8 @@ If it gives out of memory errors use cpu-only mode instead of cpu-offloading
 <pre>
 cd LucaProt/src/protein_structure/    
 export CUDA_VISIBLE_DEVICES=0
-
 python structure_from_esm_v1.py \
-    -name protein_id1,protein_id2  \
+    -name protein_id1_ESM,protein_id2ESM  \
     -seq VGGLFDYYSVPIMT,LPDSWENKLLTDLILFAGSFVGSDTCGKLF \
     -o pdbs/rdrp/  \
     --num-recycles 4 \
