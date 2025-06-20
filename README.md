@@ -16,7 +16,9 @@ ModuleNotFoundError: No module named 'openfold'
 
 ### ✅ Fix:
 Update Pytorch and gnu compiler version
-
+<p>
+  hi
+</p>
 <pre>
   # Activate your conda environment
     conda activate $SCRATCH/conda/envs/lucaprot
