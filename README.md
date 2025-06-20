@@ -48,19 +48,18 @@ Install all OpenFold dependencies (reference: [ESM README](https://github.com/fa
 
 If it gives out of memory errors use cpu-only mode instead of cpu-offloading
 <pre>
-  cd LucaProt/src/protein_structure/    
+cd LucaProt/src/protein_structure/    
+export CUDA_VISIBLE_DEVICES=0
 
-  export CUDA_VISIBLE_DEVICES=0
-  
-  python structure_from_esm_v1.py \
-      -name protein_id1,protein_id2  \
-      -seq VGGLFDYYSVPIMT,LPDSWENKLLTDLILFAGSFVGSDTCGKLF \
-      -o pdbs/rdrp/  \
-      --num-recycles 4 \
-      --truncation_seq_length 4096 \
-      --chunk-size 64 \
-      --cpu-only \           
-      --batch_size 1
+python structure_from_esm_v1.py \
+    -name protein_id1,protein_id2  \
+    -seq VGGLFDYYSVPIMT,LPDSWENKLLTDLILFAGSFVGSDTCGKLF \
+    -o pdbs/rdrp/  \
+    --num-recycles 4 \
+    --truncation_seq_length 4096 \
+    --chunk-size 64 \
+    --cpu-only \
+    --batch_size 1
 </pre>
 
 after this it worked for me and it generated a pdb file called protein_1.pdb at `cd ~/scratch/LucaProt/src/protein_structure/pdbs/rdrp/pdb/`
