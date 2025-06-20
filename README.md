@@ -59,7 +59,7 @@ If it gives out of memory errors use cpu-only mode instead of cpu-offloading
       --num-recycles 4 \
       --truncation_seq_length 4096 \
       --chunk-size 64 \
-      --cpu-only \            #changed here
+      --cpu-only \           
       --batch_size 1
 </pre>
 
