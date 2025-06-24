@@ -79,5 +79,16 @@ Some Usefull commands (for my reference).
   conda env remove -n lucaprot #replace lucaprot with the name of your conda environment
   conda env list
   conda activate lucaprot
+
+  module load compiler/cuda/11.0/compilervars
+  module load compiler/gcc/9.1.0
+  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+
+  python structure_from_alphafold2.py \
+    -name protein_id1,protein_id2  \
+    -seq VGGLFDYYSVPIMT,LPDSWENKLLTDLILFAGSFVGSDTCGKLF \
+    -o pdbs/rdrp/  \
+    --num-recycles 4 \
+    --cpu-only
   
 </pre>
