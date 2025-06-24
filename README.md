@@ -68,4 +68,16 @@ after this it worked for me and it generated a pdb file called protein_1.pdb at 
 
 I edited the `structure_from_esm_v1.py` and renamed it to `structure_from_alphafold2.py`. Remove the orignal and add this at  `cd ~/scratch/LucaProt/src/protein_structure/`
 
+Dependencies 
+<pre>
+  pip install "colabfold[alphafold]"
+</pre>
 
+
+Some Usefull commands (for my reference).
+<pre>
+  conda env remove -n lucaprot #replace lucaprot with the name of your conda environment
+  conda env list
+  conda activate lucaprot
+  
+</pre>
