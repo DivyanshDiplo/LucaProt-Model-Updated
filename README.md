@@ -62,3 +62,10 @@ python structure_from_esm_v1.py \
 </pre>
 
 after this it worked for me and it generated a pdb file called protein_1.pdb at `cd ~/scratch/LucaProt/src/protein_structure/pdbs/rdrp/pdb/`
+
+
+## 2) 🔍 Using ColabFold (alphafold) for 3D structure Predictions
+
+I edited the `structure_from_esm_v1.py` and renamed it to `structure_from_alphafold2.py`. Remove the orignal and add this at  `cd ~/scratch/LucaProt/src/protein_structure/`
+
+
