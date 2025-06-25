@@ -81,6 +81,7 @@ Dependencies. You can paste this in a txt file and run `pip install -r filename.
   pandas
   # pynvml is needed by utils.py. Installing nvidia-ml-py is the modern way to get it.
   nvidia-ml-py
+  scikit-learn
 
 </pre>
 
@@ -93,10 +94,13 @@ Some Usefull commands (for my reference).
 
   module load compiler/cuda/11.0/compilervars
   module load compiler/gcc/9.1.0
+  
   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
   pip install nvidia-ml-py
   conda install -c conda-forge pynvml
-  pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple 
+  pip install scikit-learn
+  
+  pip install -r requirements_alphafold.txt
 
   python structure_from_alphafold2.py \
     -name protein_id1,protein_id2  \
