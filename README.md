@@ -106,7 +106,7 @@ Some Usefull commands (for my reference).
     -name protein_id1,protein_id2  \
     -seq VGGLFDYYSVPIMT,LPDSWENKLLTDLILFAGSFVGSDTCGKLF \
     -o pdbs/rdrp/  \
-    --num-recycles 4 \
+    --num-recycle 4 \
     --cpu-only
   
 </pre>
