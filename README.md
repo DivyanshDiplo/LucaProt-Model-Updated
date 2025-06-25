@@ -83,6 +83,8 @@ Some Usefull commands (for my reference).
   module load compiler/cuda/11.0/compilervars
   module load compiler/gcc/9.1.0
   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+  pip install nvidia-ml-py
+  conda install -c conda-forge pynvml
 
   python structure_from_alphafold2.py \
     -name protein_id1,protein_id2  \
