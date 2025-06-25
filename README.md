@@ -85,6 +85,7 @@ Some Usefull commands (for my reference).
   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
   pip install nvidia-ml-py
   conda install -c conda-forge pynvml
+  pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple 
 
   python structure_from_alphafold2.py \
     -name protein_id1,protein_id2  \
