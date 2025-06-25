@@ -68,9 +68,20 @@ after this it worked for me and it generated a pdb file called protein_1.pdb at 
 
 I edited the `structure_from_esm_v1.py` and renamed it to `structure_from_alphafold2.py`. Remove the orignal and add this at  `cd ~/scratch/LucaProt/src/protein_structure/`
 
-Dependencies 
+Dependencies. You can paste this in a txt file and run `pip install -r filename.txt`
 <pre>
-  pip install "colabfold[alphafold]"
+  # requirements_alphafold.txt
+  # Dependencies for the LucaProt AlphaFold/ColabFold wrapper script
+  
+  # The core package. This will pull in a compatible version of PyTorch, NumPy, etc.
+  colabfold[alphafold]
+  
+  # Dependencies for your helper scripts (e.g., utils.py)
+  biopython
+  pandas
+  # pynvml is needed by utils.py. Installing nvidia-ml-py is the modern way to get it.
+  nvidia-ml-py
+
 </pre>
 
 
