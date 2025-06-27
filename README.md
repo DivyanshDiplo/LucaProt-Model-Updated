@@ -110,3 +110,5 @@ Some Usefull commands (for my reference).
     --cpu-only
   
 </pre>
+
+## 3) 🔍 Using Alphafold for prediction of structural embeddings
