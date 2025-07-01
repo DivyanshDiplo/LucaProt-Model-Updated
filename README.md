@@ -104,7 +104,9 @@ for IITD HPC load following modules
 
 If you get empty pdb files you need to download alphafold parameters
 <pre>
+  mkdir -p colabfold_data/params
   wget https://storage.googleapis.com/alphafold/alphafold_params_2022-12-06.tar -O colabfold_data/params/params.tar.gz
+  tar -xf colabfold_data/params/alphafold_params_2022-12-06.tar -C colabfold_data/params/
 </pre>
 
 fix older jax environment 
