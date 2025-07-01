@@ -101,13 +101,13 @@ Some Usefull commands (for my reference).
   pip install scikit-learn
   
   pip install -r requirements_alphafold.txt
+  rm -rf pdbs/rdrp/
 
   python structure_from_alphafold2.py \
     -name protein_id1,protein_id2  \
     -seq VGGLFDYYSVPIMT,LPDSWENKLLTDLILFAGSFVGSDTCGKLF \
     -o pdbs/rdrp/  \
     --num-recycle 4 \
-    --cpu-only
   
 </pre>
 
