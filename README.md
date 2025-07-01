@@ -132,6 +132,12 @@ Some Usefull commands (for my reference).
   -seq GHHHHHHHHHHDYDIPTTENLYFQGAMGSVGEVYINTIASQGKRKSAFPVGFKICGMRFYMNGTKEIDLVEGGEKITSQNTLFRDGDVIGFHYNTRLGREYLYDGRKQGYVTYDATKTRLDTTVDLDAAYIAGHREYIYGKPMDFEGYGGGARVFDGVVNTGVEFSLYLDGNNLVYLFQTTGSMSPAVFKSVRAIKAVAHK
   -o pdbs/test/ \
   --num-recycle 3
+
+  python structure_from_alphafold2.py \
+  -i test.fasta \
+  -o pdbs/test/ \
+  --num-recycles 3
+
 </pre>
 
 ## 3) 🔍 Using Alphafold for prediction of structural embeddings
