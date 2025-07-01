@@ -108,7 +108,12 @@ Some Usefull commands (for my reference).
     -seq VGGLFDYYSVPIMT,LPDSWENKLLTDLILFAGSFVGSDTCGKLF \
     -o pdbs/rdrp/  \
     --num-recycle 4 \
-  
+
+  python structure_from_alphafold2.py \
+  -name T1050 \
+  -seq GHHHHHHHHHHDYDIPTTENLYFQGAMGSVGEVYINTIASQGKRKSAFPVGFKICGMRFYMNGTKEIDLVEGGEKITSQNTLFRDGDVIGFHYNTRLGREYLYDGRKQGYVTYDATKTRLDTTVDLDAAYIAGHREYIYGKPMDFEGYGGGARVFDGVVNTGVEFSLYLDGNNLVYLFQTTGSMSPAVFKSVRAIKAVAHK
+  -o pdbs/test/ \
+  --num-recycle 3
 </pre>
 
 ## 3) 🔍 Using Alphafold for prediction of structural embeddings
