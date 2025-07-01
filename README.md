@@ -85,6 +85,24 @@ Dependencies. You can paste this in a txt file and run `pip install -r filename.
 
 </pre>
 
+If you get empty pdb files you need to download alphafold parameters
+<pre>
+  wget https://storage.googleapis.com/alphafold/alphafold_params_2022-12-06.tar -O colabfold_data/params/params.tar.gz
+</pre>
+
+fix older jax environment 
+<pre>
+  pip uninstall -y jax jaxlib
+  pip install --upgrade "jax[cuda12_pip]==0.4.23" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+  python -c "import jax; print(jax.local_devices())"
+
+  rm -rf pdbs/test/
+  python structure_from_alphafold2.py \
+    -i test.fasta \
+    -o pdbs/test/ \
+    --num-recycles 3
+</pre>
+
 
 Some Usefull commands (for my reference).
 <pre>
