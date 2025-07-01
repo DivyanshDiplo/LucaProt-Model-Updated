@@ -85,6 +85,23 @@ Dependencies. You can paste this in a txt file and run `pip install -r filename.
 
 </pre>
 
+If you get torch / pynvml / scikit-learn module unavailable. Also installing the above requirements
+<pre>
+  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+  pip install nvidia-ml-py
+  conda install -c conda-forge pynvml
+  pip install scikit-learn
+  
+  pip install -r requirements_alphafold.txt
+</pre>
+
+
+for IITD HPC load following modules
+<pre>
+  module load compiler/cuda/11.0/compilervars
+  module load compiler/gcc/9.1.0
+</pre>
+
 If you get empty pdb files you need to download alphafold parameters
 <pre>
   wget https://storage.googleapis.com/alphafold/alphafold_params_2022-12-06.tar -O colabfold_data/params/params.tar.gz
@@ -95,12 +112,6 @@ fix older jax environment
   pip uninstall -y jax jaxlib
   pip install --upgrade "jax[cuda12_pip]==0.4.23" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
   python -c "import jax; print(jax.local_devices())"
-
-  rm -rf pdbs/test/
-  python structure_from_alphafold2.py \
-    -i test.fasta \
-    -o pdbs/test/ \
-    --num-recycles 3
 </pre>
 
 
@@ -119,6 +130,7 @@ Some Usefull commands (for my reference).
   pip install scikit-learn
   
   pip install -r requirements_alphafold.txt
+  
   rm -rf pdbs/rdrp/
 
   python structure_from_alphafold2.py \
@@ -133,10 +145,11 @@ Some Usefull commands (for my reference).
   -o pdbs/test/ \
   --num-recycle 3
 
+  nano test.fasta 
   python structure_from_alphafold2.py \
-  -i test.fasta \
-  -o pdbs/test/ \
-  --num-recycles 3
+    -i test.fasta \
+    -o pdbs/test/ \
+    --num-recycles 3
 
 </pre>
 
