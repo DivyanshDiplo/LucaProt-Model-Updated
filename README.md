@@ -123,6 +123,23 @@ Some Usefull commands (for my reference).
   conda env list
   conda activate lucaprot
 
+  #(bash script)
+    # >>> conda initialize >>>
+  # !! Contents within this block are managed by 'conda init' !!
+  __conda_setup="$('/home/ee/btech/ee1221782/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+  if [ $? -eq 0 ]; then
+      eval "$__conda_setup"
+  else
+      if [ -f "/home/ee/btech/ee1221782/anaconda3/etc/profile.d/conda.sh" ]; then
+          . "/home/ee/btech/ee1221782/anaconda3/etc/profile.d/conda.sh"
+      else
+          export PATH="/home/ee/btech/ee1221782/anaconda3/bin:$PATH"
+      fi
+  fi
+  unset __conda_setup
+  # <<< conda initialize <<<
+
+
   module load compiler/cuda/11.0/compilervars
   module load compiler/gcc/9.1.0
   
