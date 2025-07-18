@@ -177,3 +177,15 @@ Some Usefull commands (for my reference).
 </pre>
 
 ## 3) 🔍 Using Alphafold for prediction of structural embeddings
+<pre>
+  export CUDA_VISIBLE_DEVICES=0
+
+  python embedding_from_alphafold.py \
+      -name protein_id1,protein_id2 \
+      --file seq.fasta \
+      --output_dir embs/rdrp/test/ \
+      --include mean per_tok structure_features confidence \
+      --data_dir colabfold_data \
+      --num_recycles 3 \
+
+</pre>
